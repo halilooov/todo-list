@@ -1,0 +1,35 @@
+{
+  "compilerOptions": {
+    /* Language and Environment */
+    "target": "ES6",
+    "jsx": "react-jsx",
+
+    /* Modules */
+    "module": "ES6",
+    "moduleResolution": "bundler",
+    "baseUrl": ".",
+    "outDir": "./dist",
+
+    /* Interop Constraints */
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+
+    /* Type Checking */
+    "strict": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+
+    /* Completeness */
+    "skipLibCheck": true,
+
+    "paths": {
+    "@/*": ["src/*"],
+    "assets/*": ["src/assets/*"]
+    }
+  },
+  "exclude": ["node_modules",
+    "vite.config.mts"
+  ],
+  "include": ["./src/**/*"]
+}
