@@ -6,7 +6,7 @@ import TodoStore from '../TodoStore'
 
 import styles from './TodoForm.module.less'
 
-export function TodoForm() {
+export default function TodoForm() {
   const [task, setTask] = useState('')
 
   return (
@@ -22,10 +22,12 @@ export function TodoForm() {
         value={task}
       />
       <button
+        aria-label="btn"
         type="submit"
         onClick={() => {
-          if (task)
+          if (task) {
             TodoStore.addTodo(`${Math.round(Math.random() * 1000)} ${task}`)
+          }
         }}
       >
         <AddEllipseIcon />

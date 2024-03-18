@@ -1,3 +1,5 @@
+/* eslint-disable no-param-reassign */
+
 import { makeAutoObservable } from 'mobx'
 
 export interface Todo {
@@ -7,7 +9,7 @@ export interface Todo {
 }
 
 class TodoStore {
-  todos: Todo[] = Array.from({ length: 40 }, (_, index) => ({
+  todos: Todo[] = Array.from({ length: 400000 }, (_, index) => ({
     id: index,
     task: `Task number #${index}`,
     completed: Boolean(Math.round(Math.random())),

@@ -6,16 +6,16 @@ import TodoStore, { Todo } from '../TodoStore'
 
 import { TodoItem } from '../TodoItem'
 
-const Row = ({ row }: { row: Todo }) => <TodoItem todo={row} />
+function Row({ row }: { row: Todo }) {
+  return <TodoItem todo={row} />
+}
 
-export const TodoList = observer(function TodoList() {
-  return (
-    <Virtualization<Todo>
-      rowsCount={TodoStore.todos.length}
-      boxHeight={500}
-      rowHeight={50}
-      data={TodoStore.todos}
-      Row={Row}
-    />
-  )
-})
+export default observer(() => (
+  <Virtualization<Todo>
+    rowsCount={TodoStore.todos.length}
+    boxHeight={500}
+    rowHeight={50}
+    data={TodoStore.todos}
+    Row={Row}
+  />
+))
