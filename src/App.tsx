@@ -3,7 +3,7 @@ import { TodoForm } from './components/TodoForm'
 
 import styles from './App.module.less'
 
-export const App = () => {
+export function App() {
   return (
     <div className={styles.root}>
       <h1>Todo List</h1>

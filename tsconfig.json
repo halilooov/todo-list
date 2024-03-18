@@ -24,12 +24,10 @@
     "skipLibCheck": true,
 
     "paths": {
-    "@/*": ["src/*"],
-    "assets/*": ["src/assets/*"]
+      "@/*": ["src/*"],
+      "assets/*": ["src/assets/*"]
     }
   },
-  "exclude": ["node_modules",
-    "vite.config.mts"
-  ],
+  "exclude": ["node_modules", "vite.config.mts"],
   "include": ["./src/**/*"]
 }

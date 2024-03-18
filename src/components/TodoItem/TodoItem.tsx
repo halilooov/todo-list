@@ -15,15 +15,13 @@ const Text = styled.span`
   color: #020202;
 `
 
-export const TodoItem = observer(function ({ todo }: TodoItemProps) {
-  return (
-    <li className={styles.todoItem}>
-      <input
-        type="checkbox"
-        onChange={() => TodoStore.toggle(todo)}
-        checked={todo.completed}
-      />
-      <Text>🥳 {todo.task}</Text>
-    </li>
-  )
-})
+export default observer(({ todo }: TodoItemProps) => (
+  <li className={styles.todoItem}>
+    <input
+      type="checkbox"
+      onChange={() => TodoStore.toggle(todo)}
+      checked={todo.completed}
+    />
+    <Text>{todo.task}</Text>
+  </li>
+))

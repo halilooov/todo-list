@@ -1,1 +1,3 @@
-export { TodoForm } from './TodoForm'
+import TodoForm from './TodoForm'
+
+export { TodoForm }

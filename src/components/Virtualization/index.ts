@@ -1,1 +1,3 @@
-export { Virtualization } from './Virtualization'
+import Virtualization from './Virtualization'
+
+export { Virtualization }

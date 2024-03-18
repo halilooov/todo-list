@@ -2,6 +2,7 @@
 
 - [x] write a todo list app
 - [x] write own virtualization
+- [ ] using Web Workers
 
 ##### USE IN PROJECT:
 
@@ -13,6 +14,7 @@
 - [x] `Styled Components`
 - [x] `Less Modules`
 - [x] `Prettier`
-- [ ] `ESLint`
+- [x] `ESLint`
 - [ ] `StoryBook`
 - [ ] Testing libraries...
+- [ ] Github Actions
