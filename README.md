@@ -15,6 +15,6 @@
 - [x] `Less Modules`
 - [x] `Prettier`
 - [x] `ESLint`
-- [ ] `StoryBook`
+- [x] `StoryBook`
 - [ ] Testing libraries...
 - [ ] Github Actions
