@@ -9,7 +9,7 @@ export interface Todo {
 }
 
 class TodoStore {
-  todos: Todo[] = Array.from({ length: 400000 }, (_, index) => ({
+  todos: Todo[] = Array.from({ length: 100000 }, (_, index) => ({
     id: index,
     task: `Task number #${index}`,
     completed: Boolean(Math.round(Math.random())),

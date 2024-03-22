@@ -1,6 +1,6 @@
 import { observer } from 'mobx-react-lite'
-import styled from 'styled-components'
 
+import { Text } from '@/ui'
 import TodoStore, { Todo } from '../TodoStore'
 
 import styles from './TodoItem.module.less'
@@ -8,12 +8,6 @@ import styles from './TodoItem.module.less'
 export interface TodoItemProps {
   todo: Todo
 }
-
-const Text = styled.span`
-  font-size: 20px;
-  font-weight: 700;
-  color: #020202;
-`
 
 export default observer(({ todo }: TodoItemProps) => (
   <li className={styles.todoItem}>
