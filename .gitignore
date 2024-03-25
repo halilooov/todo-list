@@ -4,3 +4,5 @@
 node_modules
 build
 *storybook.log
+
+bun.lockb
