@@ -8,7 +8,6 @@
 
 - [x] `Vite`
 - [x] `TypeScript`
-- [x] `Vite`
 - [x] `React`
 - [x] `Mobx`
 - [x] `Styled Components`
